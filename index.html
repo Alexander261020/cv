@@ -6,43 +6,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body{ font-family: Arial; }
-    .item { padding: 0 20px; border-bottom: 1px solid black; }
+    .item { padding: 0 20px; border-bottom: 1px solid grey; }
     .lefting { float: left; vertical-align: top; margin-right: 20px; }
     .container { width: 65%; margin: auto; }
-    .horizont-line { border: 1px solid black; }
+    /*.horizont-line { border: 1px solid black; }*/
+    h3{color: #4682B4;}
+    ul{ list-style-position: inside; }
+    .skills{
+      border-right: 1px solid grey;
+      padding: 0.1em 0.4em;
+      min-width: 90px;
+      text-align: center;
+      display: inline-block;
+    }
   </style>
 </head>
 
 <body>
-  <div class="container">
+  <div class="container" style="font-size: 20px;">
     <div class="item" style="text-align: center;"><h1>Коростелев Александр</h1></div>
 
-    <div class="item">
+    <div class="item" style="height: 220px;">
       <p>
-        <img src="images/I_am.jpg" class="lefting" alt="I am" width="130" height="100"/>
+        <img src="images/I_am.jpg" class="lefting" alt="I am" width="260" height="200" style="border-radius: 10px;"/>
         <h3>Контактная информация:</h3>
-        Email.: 89227049120@mail.ru<br>
-        Телефон: +7(922)704 91-20<br>
-        Адрес: г. Челябинск
+        <ul>
+          <li>Email.: 89227049120@mail.ru</li>
+          <li>Телефон: +7(922)704 91-20</li>
+          <li>Адрес: г. Челябинск</li>
+        </ul>
       </p>
     </div>
 
     <div class="item">
       <p>
         <h3>Навыки:</h3>
-        С сентября 2021года проходил курс по изучению языка Ruby в
-        <a href="https://goodprogrammer.ru/" rel="noopener" target="_blank">goodprogrammer</a><br>
-        Начал заниматься изучением языков с 2018 года.<br>
-        Изучал: html, css, javascript, php, mysql, ajax.<br>
-        Мой гитхаб: <a href="https://github.com/Alexander261020" rel="noopener" target="_blank">github</a>
+        <div class="skills">html</div> 
+        <div class="skills">css</div>
+        <div class="skills">bootstrap</div>
+        <div class="skills">javascript</div>
+        <div class="skills">php</div>
+        <div class="skills">mysql</div>
+        <div class="skills" style="border: none;">ajax</div>
       </p>
+      <p>С сентября 2021года проходил курс по изучению языка Ruby в
+      <a href="https://goodprogrammer.ru/" rel="noopener" target="_blank">goodprogrammer</a></p>
     </div>
 
     <div class="item">
       <p>
         <h3>Мои проекты:</h3>
         <a href="https://mymegaask.herokuapp.com/" rel="noopener" target="_blank">Спроси меня</a> - задай вопрос и возможно получишь ответ.<br>
-        <a href="https://megakebabs.herokuapp.com/" rel="noopener" target="_blank">Шашлыки</a> - приложение по организации встреч.
+        <a href="https://megakebabs.herokuapp.com/" rel="noopener" target="_blank">Шашлыки</a> - приложение по организации встреч.<br>
+        <a href="https://github.com/Alexander261020" rel="noopener" target="_blank">github</a> - мой гитхаб.
       </p>
     </div>
 
