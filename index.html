@@ -6,88 +6,118 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body{ font-family: Arial; }
-    .item { padding: 0 20px; border-bottom: 1px solid grey; }
-    .lefting { float: left; vertical-align: top; margin-right: 20px; }
-    .container { width: 65%; margin: auto; }
-    /*.horizont-line { border: 1px solid black; }*/
+    .row { width: 100%; border-bottom: 1px solid red; position: relative;}
+    .img { min-width: 260px; vertical-align: top; margin: 10px; border: 1px solid black; border-radius: 10px; }
+    .bord { border: 1px solid black; }
+    .container { width: 80%; margin: auto; position: relative;}
     h3{color: #4682B4;}
     h4{display:inline;}
     ul{ list-style-position: inside; }
     .skills{
-      border-right: 1px solid grey;
-      padding: 0.1em 0.4em;
+      border: 1px solid grey;
+      padding: 5px;
       min-width: 90px;
       text-align: center;
       display: inline-block;
+      margin: 2px;
     }
+    .p-2 { padding: 10px; }
     a { text-decoration: none; }
+    .text-c { text-align: center; }
+    .fs-20 { font-size: 20px; }
+    .col-8, .col-4 { display: inline-block; vertical-align: top;}
+    .col-8 { width: 59%; }
+    .col-4 { width: 40%; }
+
+    @media (max-width: 800px) {
+      .col-m { width: 100%; }
+    }
+
+    @media (max-width: 500px) {
+      .container { width: 100%; }
+      .text-s-c { text-align: center; }
+    }
   </style>
 </head>
 
 <body>
-  <div class="container" style="font-size: 20px;">
-    <div class="item" style="text-align: center;"><h1>Коростелев Александр</h1></div>
+  <div class="container fs-20">
+    <div class="row text-c"><h1>Коростелев Александр</h1></div>
+    <div class="row" style="min-height: 220px;">
+      <div class="col-4 col-m text-c">
+        <img src="images/I_am.jpg" class="img" alt="I am" width="260" height="200"/>
+      </div>
 
-    <div class="item" style="height: 220px;">
-      <p>
-        <img src="images/I_am.jpg" class="lefting" alt="I am" width="260" height="200" style="border-radius: 10px;"/>
-        <h3>Контактная информация:</h3>
+      <div class="col-8 col-m">
+        <h3 class="text-c">Контактная информация:</h3>
         <ul>
           <li>Email.: 89227049120@mail.ru</li>
           <li>Телефон: +7(922)704 91-20</li>
           <li>Адрес: г. Челябинск</li>
         </ul>
-      </p>
+      </div>
     </div>
 
-    <div class="item">
-      <p>
-        <h3>Навыки:</h3>
-        <p>C 2019 года занимался разработкой сайтов, за это время освоил:</p>
-        <div class="skills">html</div> 
-        <div class="skills">css</div>
-        <div class="skills">bootstrap</div>
-        <div class="skills">javascript</div>
-        <div class="skills">php</div>
-        <div class="skills">mysql</div>
-        <div class="skills" style="border: none;">ajax</div>
-      </p>
-      <p>С сентября 2021года проходил курс по изучению языка Ruby в
-      <a href="https://goodprogrammer.ru/" rel="noopener" target="_blank">goodprogrammer</a></p>
+    <div class="row">
+      <div class="p-2 text-s-c">
+          <h3>Навыки:</h3>
+          <p>C 2019 года занимался разработкой сайтов, за это время освоил:</p>
+          <div class="text-c">
+            <div class="skills">html</div>
+            <div class="skills">css</div>
+            <div class="skills">bootstrap</div>
+            <div class="skills">javascript</div>
+            <div class="skills">php</div>
+            <div class="skills">mysql</div>
+            <div class="skills">ajax</div>
+          </div>
+      </div>
+      <div class="p-2">
+        С сентября 2021года проходил курс по изучению языка Ruby в
+        <a href="https://goodprogrammer.ru/" rel="noopener" target="_blank">goodprogrammer</a>
+      </div>
     </div>
 
-    <div class="item">
-      <p>
-        <h3>Мои проекты:</h3>
-        <p><h4>dostavkinforyou.ru</h4> - сайт для поиска клиентов по грузоперевозкам, написанный на PHР, рекламу разворачивал через Google. Сейчас уже не поддреживаю т.к. поменял сферу деятельности.</p>
-        <p><h4>zonegame.ru</h4> - информационный сайт по играм, написанный на РНР. Около 200 страниц. С этого года не поддерживаю.</p>
-        <a href="https://mymegaask.herokuapp.com/" rel="noopener" target="_blank">Спроси меня</a> - задай вопрос и возможно получишь ответ.<br>
-        <a href="https://megakebabs.herokuapp.com/" rel="noopener" target="_blank">Шашлыки</a> - приложение по организации встреч.<br>
-        <a href="https://github.com/Alexander261020" rel="noopener" target="_blank">github</a> - мой гитхаб.
-      </p>
+    <div class="row">
+      <div class="p-2">
+        <p>
+          <h3 class="text-s-c">Мои проекты:</h3>
+          <p><h4>dostavkinforyou.ru</h4> - сайт для поиска клиентов по грузоперевозкам, написанный на PHР, рекламу разворачивал через Google. Сейчас уже не поддреживаю т.к. поменял сферу деятельности.</p>
+          <p><h4>zonegame.ru</h4> - информационный сайт по играм, написанный на РНР. Около 200 страниц. С этого года не поддерживаю.</p>
+          <a href="https://mymegaask.herokuapp.com/" rel="noopener" target="_blank">Спроси меня</a> - задай вопрос и возможно получишь ответ.<br>
+          <a href="https://megakebabs.herokuapp.com/" rel="noopener" target="_blank">Шашлыки</a> - приложение по организации встреч.<br>
+          <a href="https://github.com/Alexander261020" rel="noopener" target="_blank">github</a> - мой гитхаб.
+        </p>
+      </div>
     </div>
 
-    <div class="item">
-      <p>
-        <h3>Желаемая должность:</h3>
-        разработчик на Ruby on Rails
-      </p>
+    <div class="row">
+      <div class="p-2">
+        <p>
+          <h3>Желаемая должность:</h3>
+          разработчик на Ruby on Rails
+        </p>
+      </div>
     </div>
 
-    <div class="item">
-      <p>
-        <h3>Образование:</h3>
-        Колледж: ЧЭнК 2003-2007г
-      </p>
+    <div class="row">
+      <div class="p-2">
+        <p>
+          <h3>Образование:</h3>
+          Колледж: ЧЭнК 2003-2007г
+        </p>
+      </div>
     </div>
 
-    <div class="item">
-      <p>
-        <h3>Личные данные:</h3>
-        Дата рождения: 01.02.1988<br>
-        Семейное положение: женат.<br>
-        Дети: 2е.
-      </p>
+    <div class="row">
+      <div class="p-2">
+        <p>
+          <h3>Личные данные:</h3>
+          Дата рождения: 01.02.1988<br>
+          Семейное положение: женат.<br>
+          Дети: 2е.
+        </p>
+    </div>
     </div>
   </div>
 </body>
